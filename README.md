@@ -6,14 +6,15 @@ Selected Python exercises inspired by Industrial IoT (IIoT) patterns: MQTT/UNS-s
 
 - **ex_funcs_iiot.py**
   - Function-based exercises: alarm routing, report generation, clean function design with realistic plant logic.
-  - Using `map` and `lambda` to transform process variables in a single pass, including unit conversion (Bar to kPa) and data type validation.
 
 - **ex_map_lambda_kpi.py**
 A robust data pipeline that:
+- Use `map` and `lambda` to transform process variables in a single pass, including unit conversion (Bar to kPa) and data type validation.
 - Validates sensor data types (preventing `bool` or `str` errors).
 - Calculates **Scrap Rate** percentage.
 - Triggers **HIGH_SCRAP** alarms for values over 1.0%.
 - Handles edge cases like zero production to avoid `ZeroDivisionError`.
+- Improved report generation 
 
 ## Run
 
