@@ -39,6 +39,23 @@ A more robust data pipeline that:
 - Calculates scrap percentage and triggers alarms (e.g., HIGH_SCRAP)
 - Handles edge cases such as zero production (avoids `ZeroDivisionError`)
 
+### 5) 'ex_class_basic.py'
+
+- `TopicBuilder`
+  - Class for building consistent UNS-style MQTT topics
+  - Includes topic normalization and cell updates without creating a new instance
+
+- `AlarmEvent + AlarmPolicy`
+  - Separation between alarm data and policy decision logic
+  - Simple critical check and actionable filtering
+
+- `ShiftReport`
+  - Shift production summary with total units, scrap rate, warnings, and dictionary export
+
+
+
+
+
 
 ## How to run
 
